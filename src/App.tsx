@@ -6,7 +6,6 @@ import { ExportModal } from './components/ExportModal'
 import { MermaidModal } from './components/MermaidModal'
 import { ConvertModal } from './components/ConvertModal'
 import { AboutModal } from './components/AboutModal'
-import { useScrollSync } from './hooks/useScrollSync'
 
 function App() {
   const [isMobile, setIsMobile] = useState(false)
