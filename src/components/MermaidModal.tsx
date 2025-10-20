@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Copy, Plus, Search, ChevronDown } from 'lucide-react'
+import { Plus, Search, ChevronDown } from 'lucide-react'
 import { mermaidTemplates, getAllCategories, getTemplatesByCategory } from '../utils/mermaidTemplates'
 import { Modal } from './Modal'
 
@@ -14,11 +14,6 @@ export function MermaidModal({ isOpen, onClose, onInsertTemplate }: MermaidModal
   const [searchTerm, setSearchTerm] = useState<string>('')
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
-  const handleCopyTemplate = (template: string) => {
-    navigator.clipboard.writeText(template).then(() => {
-      // Could add copy success notification
-    })
-  }
 
   const handleInsertTemplate = (template: string) => {
     onInsertTemplate(template)

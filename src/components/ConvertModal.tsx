@@ -16,10 +16,10 @@ export function ConvertModal({ isOpen, onClose, markdown }: ConvertModalProps) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
   const conversionOptions = [
-    { value: 'md-to-html', label: 'Markdown → HTML', icon: '📝→🌐' },
-    { value: 'html-to-md', label: 'HTML → Markdown', icon: '🌐→📝' },
-    { value: 'md-to-json', label: 'Markdown → JSON', icon: '📝→📊' },
-    { value: 'json-to-md', label: 'JSON → Markdown', icon: '📊→📝' }
+    { value: 'md-to-html', label: 'Markdown → HTML' },
+    { value: 'html-to-md', label: 'HTML → Markdown' },
+    { value: 'md-to-json', label: 'Markdown → JSON' },
+    { value: 'json-to-md', label: 'JSON → Markdown' }
   ]
 
   // Handle dropdown interactions
@@ -125,7 +125,6 @@ export function ConvertModal({ isOpen, onClose, markdown }: ConvertModalProps) {
               className="w-full px-4 py-2.5 bg-white border border-gray-300 rounded-lg shadow-sm hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 flex items-center justify-between group"
             >
               <div className="flex items-center">
-                <span className="mr-2 text-lg">{conversionOptions.find(opt => opt.value === conversionType)?.icon}</span>
                 <span className="text-gray-900 group-hover:text-gray-700">{conversionOptions.find(opt => opt.value === conversionType)?.label}</span>
               </div>
               <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} />
@@ -144,7 +143,6 @@ export function ConvertModal({ isOpen, onClose, markdown }: ConvertModalProps) {
                       }}
                       className="w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors duration-150 flex items-center"
                     >
-                      <span className="mr-2 text-lg">{option.icon}</span>
                       {option.label}
                     </button>
                   ))}

@@ -75,7 +75,7 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
           <h3 className="text-lg font-semibold text-gray-900 mb-3">Get In Touch</h3>
           <div className="space-y-2">
             <a
-              href="https://github.com"
+              href="https://github.com/chenyibai9527/markdown-tools-website"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-3 text-gray-600 hover:text-gray-900 transition-colors"
@@ -84,11 +84,11 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
               <span>GitHub Repository</span>
             </a>
             <a
-              href="mailto:support@example.com"
+              href="mailto:xiaochenjeffrey@gmail.com"
               className="flex items-center space-x-3 text-gray-600 hover:text-gray-900 transition-colors"
             >
               <Mail className="w-4 h-4" />
-              <span>support@example.com</span>
+              <span>xiaochenjeffrey@gmail.com</span>
             </a>
           </div>
         </div>
@@ -96,10 +96,10 @@ export function AboutModal({ isOpen, onClose }: AboutModalProps) {
         {/* 版权信息 */}
         <div className="pt-4 border-t border-gray-200 text-center">
           <p className="text-sm text-gray-500">
-            © 2024 Markdown Tools. All rights reserved.
+            © 2025 Jeffrey Chen. All rights reserved.
           </p>
           <p className="text-xs text-gray-400 mt-1">
-            Made with ❤️ for the Markdown community
+            Made with ❤️ by Jeffrey Chen
           </p>
         </div>
       </div>
