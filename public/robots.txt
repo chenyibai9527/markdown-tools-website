@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+
+# Allow search engines to crawl all content
+Allow: /src/
+Allow: /assets/
+Allow: /static/
+
+# Block access to development files and configuration
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /.git/
+Disallow: /.env*
+Disallow: /package*.json
+Disallow: /tsconfig*.json
+Disallow: /tailwind.config.js
+Disallow: /vite.config.ts
+
+# Block access to development tools
+Disallow: /src/main.tsx
+Disallow: /src/App.tsx
+Disallow: /src/components/
+Disallow: /src/hooks/
+Disallow: /src/utils/
+
+# Allow access to built assets
+Allow: /assets/
+Allow: /index.html
+Allow: /manifest.json
+
+# Sitemap location
+Sitemap: https://markdown-tools.netlify.app/sitemap.xml
+
+# Crawl delay (optional, be respectful)
+Crawl-delay: 1
